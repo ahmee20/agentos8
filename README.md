@@ -53,7 +53,6 @@ agentos8/
 │   ├── test_protocol_and_utils.py
 │   ├── test_reflection_repair.py
 │   └── test_trace_schema.py
-├── noise/            
 ├── run_agent.py             # CLI entry point
 ├── pyproject.toml           # Project metadata
 └── README.md                # This file
@@ -64,7 +63,7 @@ agentos8/
 ## Environment Setup
 
 ### Prerequisites
-- **Python 3.11+** (tested on 3.11.9)
+- **Python 3.12** (tested on 3.12)
 - **pip** (Python package manager)
 - **Ollama** with a model (recommended: deepseek-r1:8b, mistral, or neural-chat)
 
@@ -195,8 +194,6 @@ python -m pytest tests_public/ -v --tb=short
 ## Test Cases
 
 ### Public Test Suite (6 Tests)
-
-
 
 #### 1. **test_compare_runner_schema.py**
 - **Purpose:** Validates compare.py command structure and output JSON schema
@@ -489,7 +486,7 @@ AGENTOS-8 Assignment - Educational Purpose
 
 ## Quick Checklist
 
-- [ ] Python 3.11+ installed
+- [ ] Python 3.12 installed
 - [ ] Virtual environment created and activated
 - [ ] `pip install pytest` run
 - [ ] Ollama installed and running
@@ -500,7 +497,7 @@ AGENTOS-8 Assignment - Educational Purpose
 
 ---
 
-##  Next Steps
+## 🚀 Next Steps
 
 1. **Test the system:** `python -m pytest tests_public/ -v`
 2. **Try a single task:** `python run_agent.py --task "Your task here" --backend ollama --mode react`

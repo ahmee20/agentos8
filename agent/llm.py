@@ -23,7 +23,7 @@ class LLM:
         raise ValueError("backend must be 'ollama', 'groq', or 'gemini'")
 
     def _ollama(self, prompt: str) -> str:
-        model = os.getenv("OLLAMA_MODEL", "deepseek-r1:8b")
+        model = os.getenv("OLLAMA_MODEL", "gemma3:1b")
         base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
         
         # Try chat API first
